@@ -175,7 +175,7 @@ public class CustomClass {
 				courses.stream().filter(reviewScoreAllMatch).mapToInt(Course :: getNoOfStudents).max()
 		);
 
-		System.out.println("grouping based on certain creatiria"
+		System.out.println("grouping based on certain criteria"
 			+ "\n" +
 			courses.stream().collect(Collectors.groupingBy(Course :: getCategory))
 			+ "\n" +
@@ -187,6 +187,8 @@ public class CustomClass {
 			courses.stream().collect(Collectors.groupingBy(Course::getCategory,
 					Collectors.mapping(Course::getName, Collectors.toList())))
 		);
+
+
 
 	}
 }
