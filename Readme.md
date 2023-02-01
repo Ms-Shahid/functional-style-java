@@ -52,3 +52,9 @@ since they return some object.
 In Behaviour parameterization, we can extract the stream into seperate method & use it wisely by sending different
 logics into the main function.
 ```
+
+### complex methods & interface in stream operation
+```
+-IntStream/LongStream(I) - Used to perform big Number operations
+-flatMap(M) - used to convert a stream of strings into invididual characters
+```
